@@ -7,10 +7,13 @@
     "dev": "tsx watch src/main.ts"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "logfmt": "^1.4.0",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
+    "@types/logfmt": "^1.2.6",
     "@types/node": "^22.18.7",
     "tsx": "^4.20.6",
     "typescript": "^5.9.2"
