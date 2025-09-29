@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "tsc",
     "dev": "tsc -w & node --watch dist/main.js"
   },
   "dependencies": {

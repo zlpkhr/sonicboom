@@ -13,6 +13,7 @@
     "verbatimModuleSyntax": true,
     "rewriteRelativeImportExtensions": true,
     "erasableSyntaxOnly": true,
+    "inlineSourceMap": true,
     "rootDir": "src",
     "outDir": "dist"
   }
