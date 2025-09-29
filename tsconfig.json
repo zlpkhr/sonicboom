@@ -12,6 +12,8 @@
     "moduleDetection": "force",
     "verbatimModuleSyntax": true,
     "rewriteRelativeImportExtensions": true,
-    "erasableSyntaxOnly": true
+    "erasableSyntaxOnly": true,
+    "rootDir": "src",
+    "outDir": "dist"
   }
 }
