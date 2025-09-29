@@ -1,14 +1,15 @@
-import express from "express";
 import cors from "cors";
-import { httpLogger, logger } from "./logger.ts";
+import express from "express";
 import { port } from "./app.ts";
+import { makeHttpLogger } from "./logging/http.ts";
+import { logger } from "./logging/logger.ts";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.use(httpLogger);
+app.use(makeHttpLogger(logger));
 
 app.get("/health", (req, res) => {
   res.send("OK");

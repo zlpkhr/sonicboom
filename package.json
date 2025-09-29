@@ -10,13 +10,11 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "logfmt": "^1.4.0",
     "winston": "^3.17.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
-    "@types/logfmt": "^1.2.6",
     "@types/node": "^22.18.7",
     "typescript": "^5.9.2"
   }
