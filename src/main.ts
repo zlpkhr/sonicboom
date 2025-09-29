@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
-import { httpLogger } from "./logger.ts";
+import { httpLogger, logger } from "./logger.ts";
+import { port } from "./app.ts";
 
 const app = express();
 
@@ -13,4 +14,11 @@ app.get("/health", (req, res) => {
   res.send("OK");
 });
 
-app.listen(3000);
+app.listen(port, (err) => {
+  if (err) {
+    logger.error("Failed to start server", { error: err.message });
+    process.exit(1);
+  }
+
+  logger.info("Server started", { port });
+});

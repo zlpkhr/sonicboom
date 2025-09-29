@@ -28,7 +28,7 @@ export const httpLogger = (req: Request, res: Response, next: NextFunction) => {
   res.on("finish", () => {
     const durationMs = Number(process.hrtime.bigint() - start) / 1e6;
 
-    logger.info("http_request", {
+    logger.info("HTTP Request", {
       method: req.method,
       path: req.originalUrl,
       status: res.statusCode,
